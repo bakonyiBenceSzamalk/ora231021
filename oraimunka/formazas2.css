@@ -1,0 +1,51 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'b m j'
+    'b f f'
+    'k k o'
+    'e e e';
+}
+
+main *{
+    padding: 7px;
+}
+
+#bal{
+    grid-area: b;
+    text-align: center;
+    border: dashed 1px;
+}
+
+#menu{
+    grid-area: m;
+}
+
+#jobb{
+    grid-area: j;
+    text-align: right;
+}
+
+#fo{
+    grid-area: f;
+    text-align: center;
+    border-top: double;
+    border-bottom: double;
+}
+
+#eler{
+    grid-area: e;
+}
+
+#kesz{
+    grid-area: k;
+    text-align: right;
+    border-right: dotted 1px;
+}
+
+#oszt{
+    grid-area: o;
+    text-align: center;
+}
